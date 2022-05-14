@@ -20,4 +20,10 @@ func main() {
 	fmt.Println(distance2)
 	fmt.Println(speed2)
 
+	// other option to declare multiple variable on a single line
+	var distance3, speed3 = 56000000, 100800
+
+	fmt.Println(distance3)
+	fmt.Println(speed3)
+
 }
