@@ -1,3 +1,5 @@
+// Another way to arrive at true or false is by comparing two values.
+
 package main
 
 import "fmt"
