@@ -1,5 +1,6 @@
 // A function that returns a Boolean value
-
+// The following listing uses  the --Contains-- function froms strings package
+// to ask if the {command} variable contains the text "outside"
 package main
 
 import (
