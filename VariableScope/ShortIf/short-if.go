@@ -14,5 +14,5 @@ func main() {
 		fmt.Println("SpaceX")
 	} else {
 		fmt.Println("Virgin Galactic")
-	}
+	} // num is no longer in socpe
 }
