@@ -1,3 +1,5 @@
+// Short declaration can also be used as part of a switch statement
+
 package main
 
 import (
