@@ -1,3 +1,6 @@
+// To remove duplication and simplify the code, the variables in listing(ScopeRules/scope-rules.go)
+// should be declared in wider function scope, making them available after the switch statement for later work.
+// Its time to refactor!
 package main
 
 import (
