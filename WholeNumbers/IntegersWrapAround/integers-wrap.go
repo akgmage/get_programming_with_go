@@ -11,11 +11,11 @@ func main() {
 
 	red = 255
 	red += 2
-	fmt.Println(red)
+	fmt.Println(red) // Prints 1
 
 	red = 0
 	red--
-	fmt.Println(red)
+	fmt.Println(red) // Prints 255
 
 	var number int8 = 127
 	number++
@@ -23,10 +23,10 @@ func main() {
 
 	number = -128
 	number--
-	fmt.Println(number)
+	fmt.Println(number) // Prints 127
 
 	var green uint16 = 65535
 	green++
-	fmt.Println(green)
+	fmt.Println(green) // Prints 0
 
 }
