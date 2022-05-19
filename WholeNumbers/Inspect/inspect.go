@@ -15,5 +15,8 @@ func main() {
 	fmt.Printf("Type %T for %[1]v\n", days) // Prints type int for 365.2425
 
 	a := "text"
-	fmt.Printf("Type %T for %[1]v", a)
+	fmt.Printf("Type %T for %[1]v\n", a) // Prints Type string for text
+
+	b := true
+	fmt.Printf("Type %T for %[1]v\n", b) // Prints Type bool for true
 }
