@@ -1,4 +1,4 @@
-// Rather than painstakingly typing every zero, you can write such numbers ig Go with exponent
+// Rather than painstakingly typing every zero, you can write such numbers in Go with an exponent
 package main
 
 import "fmt"
