@@ -1,3 +1,9 @@
+// Under the hood, untyped numeric constants are backed by the big package,
+// enabling all the usual operations with numbers well beyond 18 quintillion
+// For variables, Go uses type inference to determine the type, and in the case of 24 quintillion, overflows int type.
+// Constants are different. rather than infer a type, constants can be untyped.
+// const distance = 24000000000000000000 doesn't cause an overflow error
+
 package main
 
 import "fmt"
@@ -10,5 +16,5 @@ func main() {
 
 	const days = distance / lightSpeed / secondsPerDay
 
-	fmt.Println("Andromeda Galaxy is", days, "light days away.")
+	fmt.Println("Andromeda Galaxy is", days, "light days away.") // Prints Andromeda Galaxy is 926568346 light days away.
 }
