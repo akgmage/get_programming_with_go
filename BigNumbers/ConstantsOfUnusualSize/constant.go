@@ -11,7 +11,7 @@ import "fmt"
 
 func main() {
 
-	fmt.Println("Andromeda Galaxy is", 24000000000000000000/299792/86400, "light days away") // // Prints Andromeda Galaxy is 926568346 light days away.
+	fmt.Println("Andromeda Galaxy is", 24000000000000000000/299792/86400, "light days away.") // // Prints Andromeda Galaxy is 926568346 light days away.
 
 	const distance = 24000000000000000000
 	const lightSpeed = 299792
@@ -20,4 +20,7 @@ func main() {
 	const days = distance / lightSpeed / secondsPerDay
 
 	fmt.Println("Andromeda Galaxy is", days, "light days away.") // Prints Andromeda Galaxy is 926568346 light days away.
+
+	// km := distance // cannot use distance (untyped int constant 24000000000000000000) as int value in assignment (overflows)compilerNumericOverflow
+
 }
