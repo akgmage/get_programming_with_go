@@ -17,4 +17,8 @@ func main() {
 	// grade := 'A'
 	// var grade = 'A'
 	// var grade rune = 'A'
+	// The grade value still contains a numeric value, in this case 65,
+	// the code point for capital letter 'A'
+	// Character literals can also be used with the byte alias:
+	// var byte = "*"
 }
