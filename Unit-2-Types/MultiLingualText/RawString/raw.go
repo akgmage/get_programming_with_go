@@ -1,3 +1,5 @@
+// Strings may contain escape sequences, such as \n.
+// To avoid substituting \n for a new line, you can wrap text in backticks (`) instead of quotes (")
 package main
 
 import "fmt"
