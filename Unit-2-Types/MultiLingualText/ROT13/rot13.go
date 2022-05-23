@@ -17,3 +17,6 @@ func main() {
 		fmt.Printf("%c", c) // Prints hi international space sation
 	}
 }
+
+// Note that ROT13 implementation in the above listing is only intended for ASCII characters (bytes).
+// It will get confused by a message written in Spanish or Russian
