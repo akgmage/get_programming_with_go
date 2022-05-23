@@ -1,3 +1,4 @@
+// Program to print each byte [ASCII character] if "shalom" one character per line
 package main
 
 import "fmt"
