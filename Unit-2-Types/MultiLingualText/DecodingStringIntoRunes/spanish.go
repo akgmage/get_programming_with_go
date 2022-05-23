@@ -2,6 +2,7 @@
 // Fortunately, Go has functions and language features for decoding UTF-8 encoded strings
 // The utf package provides functions to determine the length of string in runes rather than bytes
 // and to decode the first character of a string
+// The DecodeRuneInString function returns the first character and the number of bytes the character consumed.
 package main
 
 import (
