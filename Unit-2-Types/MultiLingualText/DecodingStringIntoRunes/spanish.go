@@ -16,6 +16,8 @@ func main() {
 	fmt.Println(len(question), "bytes")                    // Prints 15 bytes
 	fmt.Println(utf8.RuneCountInString(question), "runes") // Prints 12 runes
 
+	// NOTE:  Unlike many programming languages, functions in Go can return multiple values.
+
 	c, size := utf8.DecodeRuneInString(question)
 	fmt.Printf("First rune: %c %v bytes", c, size) // Prints First rune: ? 1 bytes
 
