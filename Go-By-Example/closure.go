@@ -14,6 +14,8 @@ func intseq() func() int {
 }
 
 func main() {
+	// This function value captures its own i value, which will be 
+	// updated each time we call nextInt
 	nextInt := intseq()
 
 	fmt.Println(nextInt())
