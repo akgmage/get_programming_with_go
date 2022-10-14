@@ -12,7 +12,8 @@ func fact(n int) int {
 }
 func main() {
 	fmt.Println(fact(5))
-
+	// Closures can be recursive, this requires the closure to be 
+	// declared with a typed var explicitly before it’s defined
 	var fib func(n int) int
 	fib = func(n int) int {
 		if n < 2 {
