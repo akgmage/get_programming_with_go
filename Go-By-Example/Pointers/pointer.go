@@ -15,6 +15,9 @@ func zeroptr(iptr *int) {
 func main() {
 	i := 1
 	fmt.Println("Initial:", i)
+	// zeroval doesn’t change the i in main, 
+	// but zeroptr does because it has a reference 
+	// to the memory address for that variable
 	zeroval(i)
 	fmt.Println("zeroval", i)
 	zeroptr(&i)
