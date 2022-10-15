@@ -28,4 +28,9 @@ func main() {
 	for k := range kvs {
 		fmt.Println("key", k)
 	}
+	// iterate over Unicode code points
+	// first value is the starting byte index of the rune and the second the rune itself
+	for i, c := range "go" {
+		fmt.Println(i, c)
+	}
 }
