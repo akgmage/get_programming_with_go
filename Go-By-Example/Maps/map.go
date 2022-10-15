@@ -17,6 +17,7 @@ func main() {
 	delete(m, "item2")
 	fmt.Println("map", m)
 
+	// optional second return value when getting a value from a map indicates if the key was present in the map
 	_, present := m["item2"]
 	fmt.Println("present:",present)
 }
