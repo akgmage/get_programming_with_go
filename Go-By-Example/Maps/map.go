@@ -20,4 +20,9 @@ func main() {
 	// optional second return value when getting a value from a map indicates if the key was present in the map
 	_, present := m["item2"]
 	fmt.Println("present:",present)
+
+
+	// declare and initialize a new map in the same line with this syntax
+	n := map[string]int{"foo": 1, "bar": 2}
+	fmt.Println("map", n)
 }
