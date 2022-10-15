@@ -24,4 +24,8 @@ func main() {
 	for k, v := range kvs {
 		fmt.Printf("%s -> %s\n", k, v)
 	}
+	// iterate over keys of map
+	for k := range kvs {
+		fmt.Println("key", k)
+	}
 }
