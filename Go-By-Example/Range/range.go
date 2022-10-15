@@ -18,8 +18,9 @@ func main() {
 			fmt.Println("index", i)
 		}
 	}
-
+	
 	kvs := map[string]string{"a": "apple", "b":"banana"}
+	// range on map iterates over key/value pairs.
 	for k, v := range kvs {
 		fmt.Printf("%s -> %s\n", k, v)
 	}
