@@ -5,10 +5,12 @@ import (
 	"math"
 )
 
+/// basic interface for geometric shape
 type geometry interface {
 	area() float64
 	perim() float64
 }
+// implement geometry interface on rect and circle types
 type rect struct {
 	width, height float64
 }
