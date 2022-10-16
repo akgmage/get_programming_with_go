@@ -41,6 +41,8 @@ func measure(g geometry) {
 func main() {
 	r := rect{width: 2, height: 3}
 	c := circle{radius: 3}
+	// circle and rect struct types both implement the geometry interface 
+	// so we can use instances of these structs as arguments to measure
 	measure(r)
 	measure(c)
 }
