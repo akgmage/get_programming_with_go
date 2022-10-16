@@ -9,6 +9,7 @@ func vals() (int, int) {
 	return 1, 2
 }
 func main() {
+	// Here we use the 2 different return values from the call with multiple assignment
 	a, b := vals()
 
 	fmt.Println(a)
