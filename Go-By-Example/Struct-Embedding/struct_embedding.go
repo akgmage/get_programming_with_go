@@ -17,6 +17,8 @@ type container struct {
 }
 
 func main(){
+	// initialize the embedding explicitly; 
+	// here the embedded type serves as the field name
 	co := container {
 		base: base {
 			num: 1,
