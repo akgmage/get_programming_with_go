@@ -28,3 +28,11 @@ func (lst *List[T]) Push(v, T) {
 		lst.tail = lst.tail.next
 	}
 }
+
+func (lst *List[T]) GetAll() []T {
+	var elems []T
+	for e := lst.head; e != nil; e = e.next {
+		elems = append(elems, e.val)
+	}
+	return elems
+}
