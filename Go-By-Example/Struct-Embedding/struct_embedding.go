@@ -35,6 +35,7 @@ func main(){
 	type describer interface {
 		describe() string
 	}
+	// container implements the describer interface because it embeds base
 	var d describer = co
 	fmt.Println("describer:", d.describe())
 }
