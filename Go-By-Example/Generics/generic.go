@@ -1,7 +1,6 @@
 package main
 
-import "fmt"
-
+// MapKeys takes a map of any type and returns a slice of its keys
 func MapKeys[K comparable, V any](m map[K]V) []K {
 	r := make([]K, 0, len(m))
 	for k := range m {
@@ -9,7 +8,7 @@ func MapKeys[K comparable, V any](m map[K]V) []K {
 	}
 	return r
 }
-
+// List is a singly-linked list with values of any type
 type List[T any] struct {
 	head, tail *element[T]
 }
