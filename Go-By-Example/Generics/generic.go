@@ -28,7 +28,7 @@ func (lst *List[T]) Push(v, T) {
 		lst.tail = lst.tail.next
 	}
 }
-
+/// Get all elements from the list list
 func (lst *List[T]) GetAll() []T {
 	var elems []T
 	for e := lst.head; e != nil; e = e.next {
