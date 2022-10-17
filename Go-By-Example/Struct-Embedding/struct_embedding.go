@@ -25,8 +25,11 @@ func main(){
 		},
 		str: "Heyo!",
 	}
+	// access the base’s fields directly on co
 	fmt.Printf("co={num: %v, str: %v}\n", co.num, co.str)
 	fmt.Println("also num:", co.base.num)
+
+	// invoke a method that was embedded from base directly on co
 	fmt.Println("describe", co.describe())
 
 	type describer interface {
