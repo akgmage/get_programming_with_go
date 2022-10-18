@@ -48,4 +48,11 @@ func main() {
 			fmt.Println("f2 worked:", r)
 		}
 	}
+
+	_, e := f2(42)
+	// get the error as an instance of the custom error type via type assertion
+	if ae, ok := e.(*argError); ok {
+		fmt.Println(ae.arg)
+		fmt.Println(ae.prob)
+	}
 }
