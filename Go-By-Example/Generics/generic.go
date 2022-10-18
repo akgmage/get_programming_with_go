@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /// MapKeys takes a map of any type and returns a slice of its keys
 /// function has two type parameters - K and V; K has the comparable constraint, meaning that we can compare values of this type with the == and != operators
 /// V has the any constraint, meaning that it’s not restricted in any way (any is an alias for interface{})
@@ -19,7 +21,7 @@ type element[T any] struct {
 	val T
 }
 //  define methods on generic types just like we do on regular types
-func (lst *List[T]) Push(v, T) {
+func (lst *List[T]) Push(v T) {
 	if lst.tail == nil {
 		lst.head = &element[T]{val: v}
 		lst.tail = lst.head
@@ -35,4 +37,10 @@ func (lst *List[T]) GetAll() []T {
 		elems = append(elems, e.val)
 	}
 	return elems
+}
+
+func main() {
+	var m = map[int]string{1: "2", 2: "4", 4:"8"}
+	// type inference
+	fmt.Println("keys:", MapKeys(m))
 }
