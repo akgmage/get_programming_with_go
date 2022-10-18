@@ -1,3 +1,4 @@
+// A goroutine is a lightweight thread of execution
 package main
 
 import (
@@ -13,9 +14,10 @@ func f(from string) {
 
 func main() {
 	f("direct")
-
+	// This new goroutine will execute concurrently with the calling one
 	go f("goroutine")
 
+	// goroutine for an anonymous function call
 	go func(msg string) {
 		fmt.Println(msg)
 	}("going")
