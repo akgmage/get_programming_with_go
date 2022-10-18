@@ -40,4 +40,12 @@ func main() {
 			fmt.Println("f1 worked:", r)
 		}
 	}
+	// test out error-returning functions
+	for _, i := range []int{7, 42} {
+		if r, e := f2(i); e != nil {
+			fmt.Println("f2 failed:", e)
+		} else {
+			fmt.Println("f2 worked:", r)
+		}
+	}
 }
