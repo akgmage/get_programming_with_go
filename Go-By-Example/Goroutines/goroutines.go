@@ -11,7 +11,8 @@ func f(from string) {
 		fmt.Println(from, ":", i)
 	}
 }
-// we see the output of the blocking call first, then the output of the two goroutines
+// We see the output of the blocking call first, then the output of the two goroutines
+// The goroutines’ output may be interleaved, because goroutines are being run concurrently by the Go runtime.
 func main() {
 	f("direct")
 	// This new goroutine will execute concurrently with the calling one
