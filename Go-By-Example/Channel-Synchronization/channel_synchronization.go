@@ -23,4 +23,5 @@ func main() {
 	go worker(done)
 	// Block until we receive a notification from the worker on the channel.
 	<-done
+	// If you removed the <- done line from this program, the program would exit before the worker even started.
 }
