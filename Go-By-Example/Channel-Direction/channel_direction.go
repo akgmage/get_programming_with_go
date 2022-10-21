@@ -4,7 +4,8 @@
 package main
 
 import "fmt"
-
+// This ping function only accepts a channel for sending values. 
+// It would be a compile-time error to try to receive on this channel.
 func ping(pings chan<- string, msg string) {
 	pings <- msg
 }
