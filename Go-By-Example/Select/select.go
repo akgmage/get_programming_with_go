@@ -20,6 +20,7 @@ func main() {
 		c2 <- "two"
 	}()
 
+	// use select to await both of these values simultaneously, printing each one as it arrives
 	for i:= 0; i < 2; i++ {
 		select {
 		case msg1 := <-c1:
