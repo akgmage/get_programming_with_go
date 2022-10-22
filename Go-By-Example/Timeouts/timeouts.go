@@ -26,6 +26,8 @@ func main() {
 	case <-time.After(1 * time.Second):
 		fmt.Println("timeout 1")		
 	}
+	// If we allow a longer timeout of 3s, then the receive from c2 will succeed 
+	// and we’ll print the result
 	c2 := make(chan string, 1)
 	go func() {
 		time.Sleep(2 * time.Second)
