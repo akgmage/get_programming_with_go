@@ -16,6 +16,8 @@ func main() {
 		time.Sleep(2 * time.Second)
 		c1 <- "result 1"
 	}()
+	// Here’s the select implementing a timeout. res := <-c1 awaits 
+	// the result and <-time.After awaits a value to be sent after the timeout of 1s
 	select {
 	case res := <-c1:
 		fmt.Println(res)
