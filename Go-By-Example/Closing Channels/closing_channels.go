@@ -1,7 +1,10 @@
+// Closing a channel indicates that no more values will be sent on it. 
+// This can be useful to communicate completion to the channel’s receivers.
 package main
 
 import "fmt"
-
+// we’ll use a jobs channel to communicate work to be done from the main() goroutine 
+// to a worker goroutine. When we have no more jobs for the worker we’ll close the jobs channel.
 func main() {
 	jobs := make(chan int, 5)
 	done := make(chan bool)
