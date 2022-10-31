@@ -1,5 +1,5 @@
-// We often want to execute Go code at some point in the future, 
-// or repeatedly at some interval. Go’s built-in timer and ticker 
+// We often want to execute Go code at some point in the future,
+// or repeatedly at some interval. Go’s built-in timer and ticker
 // features make both of these tasks easy.
 package main
 
@@ -20,6 +20,11 @@ func main() {
 	<-timer1.C
 	fmt.Println("Timer 1 fired")
 
+	/*
+		If you just wanted to wait, you could have used time.Sleep. 
+		One reason a timer may be useful is that you can cancel the timer before it fires. 
+		Here’s an example of that.
+	*/
 	timer2 := time.NewTimer(time.Second)
 
 	go func() {
