@@ -30,5 +30,7 @@ func main() {
 	if stop2 {
 		fmt.Println("Timer 2 stopped")
 	}
+	// Give the timer2 enough time to fire, if it ever was going to, 
+	// to show it is in fact stopped.
 	time.Sleep(2 * time.Second)
 }
