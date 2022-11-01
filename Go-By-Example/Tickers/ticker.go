@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"time"
 )
 
@@ -14,8 +15,13 @@ func main() {
 			case <-done:
 				return
 			case t := <-ticker.C:
-				fmr.Println("Tick at", t)
+				fmt.Println("Tick at", t)
 			}
 		}
 	}()
+
+	time.Sleep(1600 * time.Millisecond)
+	ticker.Stop()
+	done <- true
+	fmt.Println("Ticker stopped")
 }
