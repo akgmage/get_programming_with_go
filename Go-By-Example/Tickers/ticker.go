@@ -1,3 +1,4 @@
+// Tickers : when you want to do something repeatedly at regular intervals
 package main
 
 import (
