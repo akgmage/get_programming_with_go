@@ -35,3 +35,5 @@ func main() {
 	done <- true
 	fmt.Println("Ticker stopped")
 }
+
+// When we run this program the ticker should tick 3 times before we stop it
