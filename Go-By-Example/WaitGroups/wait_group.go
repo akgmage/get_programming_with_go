@@ -24,6 +24,6 @@ func main() {
 			worker(i)
 		}()
 	}
-	
+	wg.Wait()
 
 }
