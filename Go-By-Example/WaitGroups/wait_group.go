@@ -7,9 +7,10 @@ import (
 	"time"
 )
 
+// function we’ll run in every goroutine
 func worker(id int) {
 	fmt.Printf("Worker %d starting\n", id)
-	time.Sleep(time.Second)
+	time.Sleep(time.Second) //Sleep to simulate an expensive task
 	fmt.Printf("Worker %d done\n", id)
 }
 
