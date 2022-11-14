@@ -1,4 +1,5 @@
 // Literal strings and raw strings both result in strings
+// Detailed description Source (https://pkg.go.dev/fmt)
 package main
 
 import "fmt"
