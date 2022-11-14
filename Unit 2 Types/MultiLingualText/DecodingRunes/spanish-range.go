@@ -11,7 +11,7 @@ func main() {
 		fmt.Printf("%v %c\n", i, c)
 	}
 	// If you dont need the index, the blank (an undersocre) allows you to ignore it
-	for _, c := range question {
+	for _, c := range question { // only interested in c
 		fmt.Printf("%c", c) // Prints ¿cómo estás?
 	}
 	// Prints
