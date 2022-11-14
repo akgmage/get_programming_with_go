@@ -8,6 +8,8 @@ func main() {
 	var alpha rune = 940
 	var omega rune = 969
 	var bang byte = 33
+	// %v the value in a default format
+	// %c the character represented by the corresponding Unicode code point
 	fmt.Printf("%v %v %v %v\n", pi, alpha, omega, bang) // Prints 960 940 969 33
 	fmt.Printf("%c %c %c %c\n", pi, alpha, omega, bang) // Prints π ά ω !
 
