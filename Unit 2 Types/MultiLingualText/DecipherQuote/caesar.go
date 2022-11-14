@@ -9,8 +9,9 @@ func main() {
 
 	for i := 0; i < len(message); i++ {
 		c := message[i]
+		fmt.Println(c)
 		if c >= 'A' && c <= 'z' {
-			c = c - 3
+			c = c - 3 // shift 3 letters backwards
 			if c < 'a' && c > 'z' {
 				c = c + 26
 			}
