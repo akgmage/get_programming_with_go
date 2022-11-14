@@ -11,6 +11,7 @@ func main() {
 		c := message[i]
 		if c >= 'A' && c <= 'z' {
 			c = c - 3 // shift 3 letters backwards
+			// special case when the number points to non alphabet characters in ASCII table (91-96) [\^_`]
 			if c < 'a' && c > 'Z' {
 				c = c + 26
 			}
