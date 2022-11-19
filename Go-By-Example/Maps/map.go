@@ -9,6 +9,11 @@ func main() {
 	m["item1"] = 7
 	m["item2"] = 9
 
+	mp := make(map[int]int)
+	mp[1] = 2
+	mp[2] = 1
+	fmt.Println(mp)
+
 	fmt.Println("map:", m)
 	// len returns the number of key/value pairs when called on a map
 	fmt.Println("len:", len(m))
