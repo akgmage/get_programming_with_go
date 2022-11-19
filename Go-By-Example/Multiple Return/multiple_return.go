@@ -5,16 +5,16 @@ package main
 import "fmt"
 
 // (int, int) in this function signature shows that the function returns 2 ints
-func vals() (int, int) {
-	return 1, 2
+func vals(a int, b int) (int, int) {
+	return a, b
 }
 func main() {
 	// Here we use the 2 different return values from the call with multiple assignment
-	a, b := vals()
+	a, b := vals(1, 2)
 
 	fmt.Println(a)
 	fmt.Println(b)
 	// use the blank identifier (_) if you only want a subset of the returned values, 
-	_, c := vals()
+	_, c := vals(2, 3)
 	fmt.Println(c)
 }
