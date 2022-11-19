@@ -30,4 +30,7 @@ func main() {
 	// declare and initialize a new map in the same line with this syntax
 	n := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("map", n)
+
+	p := map[string]string{"foo": "bar", "bar": "foo"}
+	fmt.Println(p)
 }
