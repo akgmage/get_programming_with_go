@@ -9,6 +9,11 @@ func main() {
 	m["item1"] = 7
 	m["item2"] = 9
 
+	mp := make(map[int]int)
+	mp[1] = 2
+	mp[2] = 1
+	fmt.Println(mp)
+
 	fmt.Println("map:", m)
 	// len returns the number of key/value pairs when called on a map
 	fmt.Println("len:", len(m))
@@ -25,4 +30,7 @@ func main() {
 	// declare and initialize a new map in the same line with this syntax
 	n := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("map", n)
+
+	p := map[string]string{"foo": "bar", "bar": "foo"}
+	fmt.Println(p)
 }
